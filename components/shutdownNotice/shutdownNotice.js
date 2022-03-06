@@ -1,6 +1,6 @@
 import { Dialog, Typography, Button } from '@material-ui/core';
 import classes from "./shutdownNotice.module.css";
-import PowerSettingsNewIcon from "@material-ui/icons/info";
+import PowerSettingsNewIcon from "@material-ui/icons/Info";
 
 export default function shutdownNotice({ close }) {
 
