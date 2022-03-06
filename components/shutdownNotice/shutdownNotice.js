@@ -1,6 +1,6 @@
 import { Dialog, Typography, Button } from '@material-ui/core';
 import classes from "./shutdownNotice.module.css";
-import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
+import PowerSettingsNewIcon from "@material-ui/icons/info";
 
 export default function shutdownNotice({ close }) {
 
@@ -8,12 +8,12 @@ export default function shutdownNotice({ close }) {
     <Dialog fullScreen open={ true } onClose={close} >
       <div className={ classes.dialogContainer }>
         <div className={classes.warningContainer}>
-          <PowerSettingsNewIcon className={ classes.InfoIcon } />
+          <PowerSettingsNewIcon className={ classes.warningIcon } />
           <Typography className={classes.para2} align='center'>
-            This new service is forked from the original repo.
+            Chainlist is forked from the original repo because of shutdown notice.
           </Typography>
           <Typography className={classes.para2} align='center'>
-            Hosted at chainlist.fyi.
+            Hosted now at chainlist.fyi
           </Typography>
           <div className={ classes.buttonsContainer }>
             <Button
